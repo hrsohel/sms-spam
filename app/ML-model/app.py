@@ -1,11 +1,12 @@
+import subprocess
+subprocess.run(["pip", "install", "nltk"])
 import sys
 import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem import PorterStemmer
 import pickle
-import subprocess
-subprocess.run(["pip", "install", "nltk"])
+
 
 arguements = sys.argv[1:]
 folder = "".join(arguements[0])

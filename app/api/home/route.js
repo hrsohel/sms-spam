@@ -4,7 +4,6 @@ import { spawn } from "child_process";
 export async function POST(req) {
   const body = await req.formData();
   const pythonDir = `${process.cwd()}/app/ML-model`;
-
   // Create a promise to wait for the Python process to complete
   const pythonProcessPromise = new Promise((resolve, reject) => {
     const pythonProcess = spawn("python", [
