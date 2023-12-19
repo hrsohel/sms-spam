@@ -1,4 +1,5 @@
 import subprocess
+subprocess.run(["pip", "install", "--upgrade", "pip"])
 subprocess.run(["pip", "install", "nltk"])
 subprocess.run(["pip", "install", "scikit-learn"])
 import sys
