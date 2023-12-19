@@ -10,7 +10,8 @@ from nltk.stem import PorterStemmer
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-
+nltk.download('stopwords')
+nltk.download('punkt')
 arguements = sys.argv[1:]
 folder = "".join(arguements[0])
 text_input = "".join(arguements[1])
