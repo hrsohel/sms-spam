@@ -1,11 +1,13 @@
 import subprocess
 subprocess.run(["pip", "install", "nltk"])
+subprocess.run(["pip", "install", "scikit-learn"])
 import sys
 import nltk
 from nltk.corpus import stopwords
 import string
 from nltk.stem import PorterStemmer
 import pickle
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 arguements = sys.argv[1:]
